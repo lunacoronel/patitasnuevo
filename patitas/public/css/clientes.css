@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url('/patitas/public/img/fondo');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.raza-container {
+    margin-bottom: 20px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.raza-container h2 {
+    margin-bottom: 10px; /* Espacio entre el nombre de la raza y la imagen */
+    font-size: 1.5em; /* Ajusta el tamaño del texto si es necesario */
+}
+
+.raza-container img {
+    width: 510px; /* Ajusta el ancho según tus necesidades */
+    height: 310px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    padding-left: 20px; /* Padding en el lado izquierdo */
+    padding-right: 20px; /* Padding en el lado derecho */
+}
+
+.cta-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.cta-container h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.cta-container p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.cta-container ol {
+    text-align: left;
+    margin: 0 auto 20px;
+    max-width: 400px;
+    padding-left: 20px;
+}
+
+.cta-container a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-container a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+/* Para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+    .raza-container h2 {
+        font-size: 1.2em; /* Ajusta el tamaño del texto */
+    }
+
+    .cta-container {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .cta-container h2 {
+        font-size: 1.3em;
+    }
+
+    .cta-container p {
+        font-size: 1em;
+    }
+
+    .cta-container ol {
+        padding-left: 10px;
+    }
+
+    .cta-container a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .raza-container img {
+        width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
+        max-width: none; /* Elimina el ancho máximo en dispositivos móviles */
+    }
+}
+
+/* Para tabletas (pantallas medianas) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .raza-container h2 {
+        font-size: 1.3em; /* Ajusta el tamaño del texto */
+    }
+
+    .cta-container {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .cta-container h2 {
+        font-size: 1.4em;
+    }
+
+    .cta-container p {
+        font-size: 1.1em;
+    }
+
+    .cta-container ol {
+        padding-left: 15px;
+    }
+
+    .cta-container a {
+        padding: 9px 18px;
+        font-size: 0.95em;
+    }
+}
+
+/* Para computadoras de escritorio (pantallas grandes) */
+@media (min-width: 769px) {
+    .raza-container h2 {
+        font-size: 1.5em; /* Ajusta el tamaño del texto */
+    }
+
+    .cta-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}

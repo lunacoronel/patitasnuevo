@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Patitas</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/carousel.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/public/img/logo.png" alt="Patitas Logo">
+            </div>
+            <nav>
+            <ul>
+                <li><a href="patitas.0.1.html">INICIO</a></li>
+                <li><a href="sobrenosotros.html">NOSOTROS</a></li>
+                <li><a href="registro.html">REGÍSTRATE</a></li>
+                <li><a href="insertar_tarjeta.html">INSERTAR ARTÍCULOS</a></li>
+                <li><a href="carrito.html">CARRITO</a></li>
+                <li><a href="checkout.html">CHECKOUT</a></li>
+                <li><a href="NuestrosClientes.html">CLIENTES</a></li>
+            </ul>
+            </nav>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h1>Finalizar Compra</h1>
+        <p>Completa tus detalles de pago para finalizar la compra.</p>
+        <!-- Aquí iría el formulario de pago y detalles del pedido -->
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección de Envío</label>
+                        <input type="text" class="form-control" id="direccion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tarjeta" class="form-label">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="tarjeta" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Realizar Pago</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h3>Resumen del Pedido</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Producto 1 - $10,500</li>
+                    <li class="list-group-item">Producto 2 - $20,350</li>
+                    <li class="list-group-item">Total: $30,850</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="cajafooter">
+                <div class="sectionfooter aa soporte">
+                    <div class="title">
+                        <h3>Soporte</h3>
+                    </div>
+                    <a href="#" style="text-decoration: none">Atención al Cliente</a> 
+                    <a href="#" style="text-decoration: none">Preguntas Frecuentes</a>    
+                    <a href="#" style="text-decoration: none">Política de Privacidad</a>  
+                    <a href="#" style="text-decoration: none">Términos de Devoluciones</a> 
+                </div>
+                <div class="sectionfooter column aa">
+                    <h3>Contacto</h3>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Nuestro Local</a>
+                    <a href="#" class="icontelefono"><i class="fa-solid fa-phone"></i> +54 351 1292054</a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i> Patitas@gmail.com</a>
+                </div>
+            </div>
+            <div class="sectionfooter form">
+                <h3>¡Haznos tu consulta!</h3>
+                <form action="">
+                    <input type="text" placeholder

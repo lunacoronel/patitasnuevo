@@ -1,0 +1,48 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+     margin: 0;
+    padding: 0;
+    background-color: rgb(131, 131, 131);
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 0;
+}
+
+body {
+    background-image: url('/patitas/public/img/fondo');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1rem 1.5rem;
+    transition: background-color 1s ease;
+    border-radius: 1px;
+    
+}
+
+nav a:hover{
+    background-color: rgb(72, 73, 72);
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 1rem;
+    
+}
