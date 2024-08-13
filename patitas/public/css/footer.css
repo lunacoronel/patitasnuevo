@@ -100,46 +100,44 @@ a:hover{
 
 @media (min-width:501px) {
     .cajafooter{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     }
- 
+
     .column a{
-        padding: 7px 0;
+    padding: 7px 0;
     }
 
     .sectionfooter form{
-        width: 100%;
-        align-content: center;
-        margin-left: 8%;
+    width: 100%;
+    align-content: center;
+    margin-left: 8%;
     }
     
 }
 
 @media (min-width:768px){
     .container{
-        display: flex; 
-        font-size: 100%;
-        margin-right: 0;
-        align-content: flex-end;
+    display: flex; 
+    font-size: 100%;
+    margin-right: 0;
+    align-content: flex-end;
     }
 
-    .form{
-        justify-content: center;
-        width: 30%;
-        min-width: 270px;
+    .fom{
+    justify-content: center;
+    width: 30%;
+    min-width: 270px;
     }
     
     .cajafooter{
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
     }
     
     .column{
-        padding-right: 5%;
-    }
-
-    
+    padding-right: 5%;
+    }  
 }

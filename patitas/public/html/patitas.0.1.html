@@ -41,37 +41,43 @@
 
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active c-iteam">
+        <div class="carousel-item active c-iteam">
             <img src="/public/img/gatoagua (2).jpg" class="d-block w-100 c-img" alt="gatitos">
-          </div>
-          <div class="carousel-item c-iteam">
+        </div>
+        <div class="carousel-item c-iteam">
             <img src="/public/img/perro (2) (1).jpg" class="d-block w-100 c-img" alt="gato">
-          </div>
-          <div class="carousel-item c-iteam">
+            </div>
+        <div class="carousel-item c-iteam">
             <img src="/public/img/perrogrande.jpg" class="d-block w-100 c-img" alt="perro">
-          </div>
+        </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
         </button>
     </div>
 
     <div class="container mt-5"></div>
+    
+    <div id="cart"> 
+        <h2>Precio total</h2>
+        <ul id="cart-items"></ul>
+        <p id="total" class="total">Total: $0</p>
+    </div>
 
     <section>
         <h2>Nuestros productos</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card" style="width: 100%;">
+                <div class="card" style="width: 100%;" data-id="1" data name="Bolsa compostable" data-price="10500">
                     <img src="/public/img/BolsaCompostable.png" class="card-img-top" alt="Bolsa compostable">
                     <div class="card-body">
                         <h5 class="card-title">Bolsa compostable</h5> 
-                        <p class="card-text text-center">$10,500</p>
+                        <p class="card-text text-center" data-price="10500">$10.500</p>
                         <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                     </div>
                 </div>
@@ -82,7 +88,7 @@
                     <img src="/public/img/rascador.png" class="card-img-top" alt="Rascador para gatos">
                     <div class="card-body">
                         <h5 class="card-title">Rascador</h5> 
-                        <p class="card-text text-center">$20,350</p>
+                        <p class="card-text text-center">$20.350</p>
                         <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                     </div>
                 </div>
@@ -93,7 +99,7 @@
                     <img src="/public/img/Collardeprotección.png" class="card-img-top" alt="Collar de protección">
                     <div class="card-body">
                         <h5 class="card-title">Collar de protección</h5> 
-                        <p class="card-text text-center">$5,000</p>
+                        <p class="card-text text-center">$5.000</p>
                         <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                     </div>
                 </div>
@@ -104,7 +110,7 @@
                     <img src="/public/img/Alimento para gatos adultos ultima con pollo bolsa 1,2 kg.jpeg" class="card-img-top" alt="Alimento para gatos adultos">
                     <div class="card-body">
                         <h5 class="card-title">Alimento para gatos de pollo</h5> 
-                        <p class="card-text text-center">$9,000</p>
+                        <p class="card-text text-center">$9.000</p>
                         <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                     </div>
                 </div>
@@ -115,7 +121,7 @@
                     <img src="/public/img/comedor.png" class="card-img-top" alt="Comedor para gatos">
                     <div class="card-body">
                         <h5 class="card-title">Comedor para gatos</h5>
-                        <p class="card-text text-center">$3,200</p>
+                        <p class="card-text text-center">$3.200</p>
                         <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                     </div>
                 </div>
@@ -126,7 +132,7 @@
                     <img src="/public/img/cuenco.png" class="card-img-top" alt="Cuenco para gatos">
                     <div class="card-body">
                         <h5 class="card-title">Cuenco para gatos</h5>
-                        <p class="card-text text-center">$20,350</p>
+                        <p class="card-text text-center">$20.350</p>
                         <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
                     </div>
                 </div>
@@ -197,5 +203,6 @@
 
     <!-- JavaScript -->
     <script src="/public/js/carrito.js"></script>
+    <script src="/public/js/app.js"></script>
 </body>
 </html>
