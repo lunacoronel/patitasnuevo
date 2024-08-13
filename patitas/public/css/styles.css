@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    background-image: url('/patitas/public/img/fondo');
+    background-image: url(/public/img/fondo.jpeg);
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen en la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
