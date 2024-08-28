@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+.nav-container{
+    background-color: #a8a8a8;
+    display: flex;
+    justify-content: space-between;
+    max-height: auto;
+}
+
+.nav-container img{
+    background-size: cover;
+    
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+    right: 0;
+}
+
+button{
+    background-color: #a8a8a8;
+    width: 40px;
+    height: 80px;
+    border: 0;
+}
+.nohizoclick{
+    display: none;
+}
+
+.hizoclick{
+    display: block;
+}
