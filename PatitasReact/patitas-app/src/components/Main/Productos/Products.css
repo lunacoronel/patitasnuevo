@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/* CSS DE LA PAG DE INICIO*/
+.container-inicio{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 75% 20%;
+    gap: 5%;
+    background-color: #cbdad5;
+}
+
+details{
+    padding-left: 10px;
+    border-left: 1px solid;
+    
+}
+
+.container-aside{
+    border: 1px solid;
+    max-height: 80vh;
+    margin-left: 20px;
+    border-radius: 3px;
+    
+   
+}
+
+/* CSS DE LA PAG PRODUCTOS Y LAS CARDS*/
+
+.container-products{
+    
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    max-width: 100%;
+    gap: 20px;
+    
+}
+
+.container-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    min-width: 200px;
+    width: auto;
+    border-radius: 2px;
+    box-shadow: 0 0 6px  ;
+    transition: .2s ease;
+}
+
+.container-card:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 8px;
+    transition: .4s ease;
+    
+}
+
+.title-card{
+    max-height: 28px;
+    font-size: 24px;
+    overflow: hidden;
+    width: 70%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.container-description{
+    display: flex;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.price-card{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-left: 4px;
+    min-width: auto;
+    overflow: hidden;
+    border-left: 1px solid rgb(150, 150, 150);
+}
+.img-card {
+    width: auto;
+    
+    overflow: hidden;
+    
+    
+}
+
+
+
+
+
+/* CARRITO CSS */
+.add-to-cart{
+    
+    
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    
+    
+    
+}
+
+.cart-container{
+    
+    padding-top: 6px;
+    
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    
+}
+
+@media screen and (max-width: 1400px) {
+
+    .container-products{
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+    
+}

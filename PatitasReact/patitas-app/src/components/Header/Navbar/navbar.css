@@ -7,30 +7,83 @@
 
 }
 
+.logo{
+    height: 70px;
+}
+
+.logo img{
+    max-height: 80px;
+    width: 80px;
+}
 .nav-container{
-    background-color: #a8a8a8;
+    background-color: #0d1f2e;
     display: flex;
     justify-content: space-between;
     max-height: auto;
+    
+    
 }
 
 .nav-container img{
     background-size: cover;
     
+
+}
+
+.barra-busqueda{
+    width: 40%;
+    
+    padding-left: 2.5%;
+    padding-right: calc(1%);
+    
+}
+
+.barra-busqueda input{
+    width: 90%;
+    height: 30px;
+    margin-top: 24px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    
+}
+
+.barra-busqueda button{
+    width: 8%;
+    height: 30px;
+    
+    background-color: #e99f30;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #0d1f2e ;
+    padding-right: 2px;
+    
+    
 }
 
 .nav-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 50%;
     margin: 0;
     align-items: center;
     list-style: none;
     right: 0;
+    
+    
 }
 
-button{
-    background-color: #a8a8a8;
+.li{
+    color: white;
+}
+
+
+.iconUser button{
+    background-color: #0d1f2e;
+    color: white;
+    font-size: 24px;
     width: 40px;
     height: 80px;
     border: 0;
@@ -38,7 +91,41 @@ button{
 .nohizoclick{
     display: none;
 }
-
+ul{
+    list-style: none;
+}
 .hizoclick{
-    display: block;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    color: #0d1f2e;
+    text-decoration: none;
+    margin-top: 40px;
+    right: 1rem;
+    top: 2rem;
+    padding: 10px;
+    border-radius: 2px;
+    button{
+        background-color: #a8a8a8;
+        right: 0;
+        max-width: 24px;
+        position: absolute;
+    }
+    /* button{
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        background-color: white;
+        border: 0;
+        width: 20px;
+    } */
+}
+
+.aa{
+    width: 100px;
+    font-size: 20px;
+    /* background-color: red; */
+
+    right: 0;
 }

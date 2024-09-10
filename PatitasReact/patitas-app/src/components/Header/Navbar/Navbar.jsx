@@ -9,10 +9,13 @@ import Nosotros from './Nosotros'
 import Login from "./Login"
 import Register from "./Register"
 import "./navbar.css"
+import Footer from "../../Footer/Footer"
 
 //ESTO ES PARA EL ICONO DE REACT-ICONS
 //https://react-icons.github.io/react-icons/    AHI ESTA LA PAG; SE INSTALA LA DEPENDENCIA Y DESPUES SE USA EL ICONO COMO SI FUESE UN COMPONENTE
 import { CiUser } from "react-icons/ci";
+import { IoIosSearch } from "react-icons/io";
+import { IoCloseOutline } from "react-icons/io5";
 
 //LOGO
 const logo = "../../../../public/img/logo.png"
@@ -31,18 +34,23 @@ const Navbar = () => {
             <div className='logo'>
                 <img src={logo} alt="" />
             </div>
+            <div className='barra-busqueda'>
+                <input type="text" placeholder='Buscar productos'/>
+                <button>Buscar</button>
+            </div>
             <ul className='nav-items'>
-                <li><Link to="/">Inicio</Link></li>
-                <li><Link to="/Nosotros" >Nosotros</Link></li>
-                <li><Link to="/Clientes">Clientes</Link></li>
-                <li><Link to="/Carrito">Carrito</Link></li>
+                <li><Link to="/" className='li'>Inicio</Link></li>
+                <li><Link to="/Nosotros" className='li'>Nosotros</Link></li>
+                <li><Link to="/Clientes"className='li'>Clientes</Link></li>
+                <li><Link to="/Carrito"className='li'>Carrito</Link></li>
                 <li className='iconUser'>
-                   <button  onClick={handleClick} clicked={clicked}> <CiUser ></CiUser></button>
+                   <button  onClick={handleClick} className='li'> <CiUser ></CiUser></button>
                 </li>
 
                 <li className={clicked? "hizoclick": "nohizoclick"}>
                 
                     <ul>
+                        {/* <button  onClick={handleClick} ><IoCloseOutline className='aa'/></button> */}
                         <li><Link to="/Login">Iniciar Sesion</Link></li>
                         <li><Link to="/Register" >Registrarse</Link></li>
                     </ul>
@@ -54,6 +62,8 @@ const Navbar = () => {
             
         </nav>
 
+        
+
         <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/Nosotros" element={<Nosotros />} />
@@ -63,6 +73,8 @@ const Navbar = () => {
             <Route path="/Register" element={<Register />} />
         </Routes>
 
+
+        <Footer></Footer>
     </Router>
   )
 }
