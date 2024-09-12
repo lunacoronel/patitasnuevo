@@ -9,7 +9,9 @@
 
 .logo{
     height: 70px;
+    width: 90px;    
 }
+    
 
 .logo img{
     max-height: 80px;
@@ -39,7 +41,7 @@
 }
 
 .barra-busqueda input{
-    width: 90%;
+    width: 80%;
     height: 30px;
     margin-top: 24px;
     border: none;

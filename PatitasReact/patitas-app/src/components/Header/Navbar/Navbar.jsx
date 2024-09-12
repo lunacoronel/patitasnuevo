@@ -9,7 +9,7 @@ import Nosotros from './Nosotros'
 import Login from "./Login"
 import Register from "./Register"
 import "./navbar.css"
-import Footer from "../../Footer/Footer"
+
 
 //ESTO ES PARA EL ICONO DE REACT-ICONS
 //https://react-icons.github.io/react-icons/    AHI ESTA LA PAG; SE INSTALA LA DEPENDENCIA Y DESPUES SE USA EL ICONO COMO SI FUESE UN COMPONENTE
@@ -22,8 +22,11 @@ const logo = "../../../../public/img/logo.png"
 
 const Navbar = () => {
 
+   
+
+    //Funcion para esconder la lista
     const [clicked, setClicked] = useState(false)
-    console.log(clicked)
+    
     const handleClick = ()=>{
         setClicked(!clicked)
         
@@ -35,11 +38,11 @@ const Navbar = () => {
                 <img src={logo} alt="" />
             </div>
             <div className='barra-busqueda'>
-                <input type="text" placeholder='Buscar productos'/>
-                <button>Buscar</button>
+                <input type="text" placeholder='Buscar productos' />
+                <button  >Buscar</button>
             </div>
             <ul className='nav-items'>
-                <li><Link to="/" className='li'>Inicio</Link></li>
+                <li><Link to="/" className='li' >Inicio</Link></li>
                 <li><Link to="/Nosotros" className='li'>Nosotros</Link></li>
                 <li><Link to="/Clientes"className='li'>Clientes</Link></li>
                 <li><Link to="/Carrito"className='li'>Carrito</Link></li>
@@ -74,7 +77,7 @@ const Navbar = () => {
         </Routes>
 
 
-        <Footer></Footer>
+       
     </Router>
   )
 }

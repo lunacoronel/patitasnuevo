@@ -1,12 +1,12 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import Productos from "../../Main/Productos/Productos"
 import '../../Main/Productos/Products.css'
-import Aside from '../../Main/Productos/Aside'
+
 
 
 const Inicio = () => {
 
-  
+  const [allProducts,setAllProducts] = useState([])
 
   return (
     <div className='container-inicio'>
@@ -18,13 +18,13 @@ const Inicio = () => {
 
 
       <main>
-        <Productos/>
+        <Productos allProducts={allProducts} setAllProducts={setAllProducts}
+         
+        />
       </main>
 
         
-      <aside className='container-aside'>
-        {console.log(<Aside/>)}
-      </aside>
+      
     </div>
   )
 }

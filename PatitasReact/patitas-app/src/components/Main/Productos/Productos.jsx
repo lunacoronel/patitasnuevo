@@ -5,7 +5,7 @@ import React,{useState,useEffect} from 'react';
 //ICONO CART
 import { MdAddShoppingCart } from "react-icons/md";
 
-const Productos = () => {
+const Productos = (allProducts,setAllProducts) => {
 
     const apiUrl = 'https://dummyjson.com/products'
     const [productos, setProductos] = useState([])
@@ -16,6 +16,13 @@ const Productos = () => {
         .then(data => setProductos(data.products))
         
     },[])
+
+
+   
+    const onAddProduct=(add)=>{
+        setAllProducts(add)
+
+    }
     
     
 
@@ -25,7 +32,7 @@ const Productos = () => {
       
         {productos.map((pr)=>{
             return(
-                <div key={productos.id} className='container-card'>
+                <div key={pr.id} className='container-card'>
                     <div className='img-card'>
                         <img src={pr.thumbnail} alt={pr.title}  />
 
@@ -38,7 +45,7 @@ const Productos = () => {
                             
                         <div className='cart-container'>
                             
-                            <button className='add-to-cart'>Añadir al carrito</button>
+                            <button className='add-to-cart'  >Añadir al carrito</button>
                         </div>
                     </div>
                 </div>

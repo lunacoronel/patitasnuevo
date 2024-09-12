@@ -11,8 +11,7 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
-    display: grid;
-    grid-template-columns: 75% 20%;
+    
     gap: 5%;
     background-color: #cbdad5;
 }
@@ -23,14 +22,7 @@ details{
     
 }
 
-.container-aside{
-    border: 1px solid;
-    max-height: 80vh;
-    margin-left: 20px;
-    border-radius: 3px;
-    
-   
-}
+
 
 /* CSS DE LA PAG PRODUCTOS Y LAS CARDS*/
 
@@ -38,8 +30,10 @@ details{
     
     display: grid;
     grid-template-columns: 4fr 4fr 4fr 4fr;
+    
     max-width: 100%;
     gap: 20px;
+    padding-bottom: 2rem;
     
 }
 
