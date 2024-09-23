@@ -1,0 +1,188 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.footer{
+    background-color: #0d1f2e;
+    width: 100%;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    margin: 0;
+    min-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    border-bottom: #e99f30 solid 1px;
+    
+}
+
+.sectionfooter{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+    
+} 
+
+
+.title{
+    font-size: 1.5rem;
+    color: #e99f30;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    padding: .5rem 0;
+    transition: .2s;
+    
+    color: white;
+}
+
+
+a:hover{
+    background-color: #e99f30;
+    color: black;
+    transition:  .5s ease;
+} 
+
+
+
+
+
+
+.copy p{
+    text-align: center;
+    color: white;
+}
+
+.barra-busqueda{
+    width: 100%;
+}
+.barra-busqueda input{
+    
+    /* text-align: center;
+    width: 200%; */
+
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    
+} 
+
+
+.barra-busqueda button{
+    /* width: 20%; */
+    
+    background-color: #e99f30;
+    
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #0d1f2e ;
+    
+    
+    
+}
+
+
+
+/*
+.sectionfooter form{
+    padding: 10px;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+    padding-left: calc(15%);
+} */
+
+/* .sectionfooter form input{
+    margin-bottom: 10px;
+    border-color: none;
+    border-top-color: rgb(204, 202, 202);
+    border-left-color: rgb(204, 202, 202);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.button{
+    max-width: 40%;
+    margin-left: calc(30%);
+    padding: 6px;
+    border-radius: 8px;
+    background-color: white ;
+    transition: color 0.5s;
+    border-color: rgb(92, 89, 89);
+    border-bottom-color: rgb(168, 163, 163);
+    border-right-color: rgb(168, 163, 163);
+    
+}
+
+.button:hover{
+    background-color: rgb(43, 43, 194);
+    color: white;
+}
+
+.icontelefono i{
+    transition: color .5s ease;
+}
+
+.icontelefono i:hover{
+    color: rgb(43, 43, 194);
+} */
+/* 
+@media (min-width:501px) {
+    .cajafooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+    .column a{
+    padding: 7px 0;
+    }
+
+    .sectionfooter form{
+    width: 100%;
+    align-content: center;
+    margin-left: 8%;
+    }
+    
+}
+
+@media (min-width:768px){
+    .container{
+    display: flex; 
+    font-size: 100%;
+    margin-right: 0;
+    align-content: flex-end;
+    }
+
+    .fom{
+    justify-content: center;
+    width: 30%;
+    min-width: 270px;
+    }
+    
+    .cajafooter{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    }
+    
+    .column{
+    padding-right: 5%;
+    }  
+} */

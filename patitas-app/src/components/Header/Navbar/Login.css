@@ -1,0 +1,129 @@
+/* General styles for the body */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e2ebf0 0%, #cfd9df 100%);
+}
+
+/* Styles for the login container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    width: 340px;
+    text-align: center; /* Centers text inside the container */
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+.login-container img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    margin: 0 0 20px;
+    font-size: 26px;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #444;
+    text-align: center; /* Centers labels */
+}
+
+.login-container input {
+    width: 100%; /* Makes input occupy 100% of the available width */
+    max-width: 300px; /* Limits the maximum width of the input */
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    margin: 0 auto 15px; /* Centers input horizontally */
+    display: block; /* Makes the input behave as a block */
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #6B73FF;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    max-width: 300px; /* Limits the maximum width of the button */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #218838;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; /* Adjusts container width on smaller screens */
+        max-width: 400px; /* Sets a larger maximum width on tablets and phones */
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 22px; /* Reduces font size of heading */
+    }
+
+    .login-container input,
+    .login-container button {
+        max-width: 100%; /* Ensures inputs and button use full width */
+    }
+
+    .login-container input {
+        padding: 10px;
+    }
+
+    .login-container button {
+        padding: 10px;
+        font-size: 16px; /* Reduces font size of button */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%; /* Further adjusts container width on very small screens */
+        max-width: 340px; /* Ensures a smaller maximum width on very small devices */
+        padding: 15px;
+    }
+
+    .login-container h2 {
+        font-size: 20px; /* Further reduces font size of heading */
+    }
+
+    .login-container input {
+        padding: 8px;
+    }
+
+    .login-container button {
+        padding: 8px;
+        font-size: 14px; /* Further reduces font size of button */
+    }
+}
