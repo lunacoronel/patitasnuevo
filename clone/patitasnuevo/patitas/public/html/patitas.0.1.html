@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas</title>
+    <!-- link del css: -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/carousel.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/public/img/logo.png" alt="Patitas Logo">
+            </div>
+            <nav>
+            <ul>
+                <li><a href="patitas.0.1.html">INICIO</a></li>
+                <li><a href="sobrenosotros.html">NOSOTROS</a></li>
+                <li><a href="registro.html">REGÍSTRATE</a></li>
+                <li><a href="insertar_tarjeta.html">INSERTAR ARTÍCULOS</a></li>
+                <li><a href="carrito.html">CARRITO</a></li>
+                <li><a href="checkout.html">CHECKOUT</a></li>
+                <li><a href="NuestrosClientes.html">CLIENTES</a></li>
+            </ul>
+            </nav>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+        <div class="carousel-item active c-iteam">
+            <img src="/public/img/gatobanana.png" class="d-block w-100 c-img" alt="gatitos">
+        </div>
+        <div class="carousel-item c-iteam">
+            <img src="/public/img/perrogato.jpg" class="d-block w-100 c-img" alt="gato">
+            </div>
+        <div class="carousel-item c-iteam">
+            <img src="/public/img/perroshrek.jpg" class="d-block w-100 c-img" alt="perro">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5"></div>
+    
+    <div id="cart"> 
+        <h2>Precio total</h2>
+        <ul id="cart-items"></ul>
+        <p id="total" class="total">Total: $0</p>
+    </div>
+
+    <section>
+        <h2>Nuestros productos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;" data-id="1" data name="Bolsa compostable" data-price="10500">
+                    <img src="/public/img/BolsaCompostable.png" class="card-img-top" alt="Bolsa compostable">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa compostable</h5> 
+                        <p class="card-text text-center" data-price="10500">$10.500</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/public/img/rascador.png" class="card-img-top" alt="Rascador para gatos">
+                    <div class="card-body">
+                        <h5 class="card-title">Rascador</h5> 
+                        <p class="card-text text-center">$20.350</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/public/img/Collardeprotección.png" class="card-img-top" alt="Collar de protección">
+                    <div class="card-body">
+                        <h5 class="card-title">Collar de protección</h5> 
+                        <p class="card-text text-center">$5.000</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/public/img/Alimento para gatos adultos ultima con pollo bolsa 1,2 kg.jpeg" class="card-img-top" alt="Alimento para gatos adultos">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento para gatos de pollo</h5> 
+                        <p class="card-text text-center">$9.000</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/public/img/comedor.png" class="card-img-top" alt="Comedor para gatos">
+                    <div class="card-body">
+                        <h5 class="card-title">Comedor para gatos</h5>
+                        <p class="card-text text-center">$3.200</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/public/img/cuenco.png" class="card-img-top" alt="Cuenco para gatos">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuenco para gatos</h5>
+                        <p class="card-text text-center">$20.350</p>
+                        <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart" data-modal="#jsModalCarrito">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Carrito -->
+    <div class="modal fade" id="jsModalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCarritoLabel"><i class="fa-brands fa-opencart"></i> Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__list">
+                        <!-- Aquí se agregarán los elementos del carrito dinámicamente -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal__list-price">
+                        <ul>
+                            <li>Subtotal: <strong id="subtotal">$0.00</strong></li>
+                            <li>Descuento: <strong id="descuento">$0.00</strong></li>
+                        </ul>
+                        <h4 class="modal__total-cart"> Total: <strong id="total">$0.00</strong></h4>
+                    </div>
+                    <a href="carrito.html" class="btn btn-outline-primary">Ir al carrito</a>
+                    <a href="checkout.html" class="btn btn-primary">Comprar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="cajafooter">
+                <div class="sectionfooter aa soporte">
+                    <div class="title">
+                        <h3>Soporte</h3>
+                    </div>
+                    <a href="#" style="text-decoration: none">Atención al Cliente</a> 
+                    <a href="#" style="text-decoration: none">Preguntas Frecuentes</a>    
+                    <a href="#" style="text-decoration: none">Política de Privacidad</a>  
+                    <a href="#" style="text-decoration: none">Términos de Devoluciones</a> 
+                </div>
+                <div class="sectionfooter column aa">
+                    <h3>Contacto</h3>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Nuestro Local</a>
+                    <a href="#" class="icontelefono"><i class="fa-solid fa-phone"></i> +54 351 1292054</a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i> Patitas@gmail.com</a>
+                </div>
+            </div>
+            <div class="sectionfooter form">
+                <h3>¡Haznos tu consulta!</h3>
+                <form action="">
+                    <input type="text" placeholder="">
+                    <button class="button" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="copy sectionfooter">
+            <p>Todos los derechos reservados. ©️ Patitas 2024.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/public/js/carrito.js"></script>
+    <script src="/public/js/app.js"></script>
+</body>
+</html>

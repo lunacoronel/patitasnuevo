@@ -1,0 +1,70 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+body {
+    background-image: url('/patitas/public/img/fondo');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Opcional: organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    height: 200px;           /* Ajusta la altura según sea necesario */
+    text-align: center;      /* Centra el texto en los elementos en línea */
+
+}
+
+
+/* Header Styles */
+header {
+    background-color: (#474747);
+    padding: 0.5rem 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 2rem 1.5rem;
+    transition: background-color 1s ease;
+    border-radius: 1px;
+}
+
+nav a:hover {
+    background-color: rgb(72, 73, 72);
+}
+
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+
+}
+
+section{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}

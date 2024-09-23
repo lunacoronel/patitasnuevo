@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url('/patitas/public/img/fondo');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Opcional: organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    height: 200px;           /* Ajusta la altura según sea necesario */
+    text-align: center;      /* Centra el texto en los elementos en línea */
+}
+
+
+/* Header Styles */
+header {
+    background-color: (#fff);
+    padding: 0.5rem 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 2rem 1.5rem;
+    transition: background-color 1s ease;
+    border-radius: 1px;
+}
+
+nav a:hover {
+    background-color: rgb(72, 73, 72);
+}
+
+/* Custom Classes */
+.c-iteam {
+    height: 500px;
+    width: 500px;
+}
+
+.c-img {
+    width: 600px;
+    object-fit: cover;
+    height: 600px;
+}
+
+.carousel.slide {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Styles */
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        padding: 1rem;
+    }
+
+    .c-iteam {
+        height: 300px;
+        width: 300px;
+    }
+
+    .c-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel.slide {
+        width: 90%;
+    }
+}
+
+/* Tablets (Portrait and Landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 1.5rem 1rem;
+    }
+
+    .c-iteam {
+        height: 400px;
+        width: 400px;
+    }
+
+    .c-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel.slide {
+        width: 70%;
+    }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 1025px) {
+    nav a {
+        padding: 2rem 1.5rem;
+    }
+
+    .c-iteam {
+        height: 500px;
+        width: 500px;
+    }
+
+    .c-img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .carousel.slide {
+        width: 50%;
+    }
+}
